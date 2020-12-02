@@ -1,3 +1,5 @@
+from datetime import date
 import runner
 
-runner.run(day=1)
+today = (date.today() - date(2020, 12, 1)).days + 1
+runner.run(day=today)
