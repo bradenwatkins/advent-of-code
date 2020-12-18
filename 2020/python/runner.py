@@ -55,7 +55,7 @@ def run_part(part: str, mod: Any, data: str):
 
 def get_data(day):
     # Try to find the filename
-    fname = format_filename(day) + ".txt"
+    fname = "../input/" + format_filename(day) + ".txt"
     try:
         with open(fname, "r") as f:
             data = f.read()
