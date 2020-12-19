@@ -8,7 +8,8 @@ namespace csharp
 
     private static Dictionary<int, Day> days = new Dictionary<int, Day>
       {
-        {1, new Day1()}
+        {1, new Day1()},
+        {2, new Day2()}
       };
 
     static void Main(string[] args)

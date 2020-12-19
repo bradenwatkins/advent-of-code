@@ -3,7 +3,7 @@ def part1(raw_data):
     lines = [x.split(' ') for x in raw_data.split('\n')]
     for line in lines:
         counts = list(map(int, line[0].split('-')))
-        letter = line[1][:-1]
+        letter = line[1][0]
         password = line[2]
         actual_count = password.count(letter)
         if counts[0] <= actual_count and actual_count <= counts[1]:
